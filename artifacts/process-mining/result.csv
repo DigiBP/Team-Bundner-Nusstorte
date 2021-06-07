@@ -1,0 +1,156 @@
+﻿activityId,activityName,activityType,processDefinitionKey,durationInMillis,durationFaked
+Activity_035rmj8,Send Order Response Email,serviceTask,Order-Approval,5916,286682
+Activity_06aef69,Judge ID Validity,userTask,Order-Approval,null,1561207
+Activity_0e8bmr3,Order Beer,serviceTask,Inventory-Purchasing,30578,7853
+Activity_0ljv0o8,Check Physical Inventory,userTask,Order-Fulfillment,668422,1750017
+Activity_0ljv0o8,Check Physical Inventory,userTask,Order-Fulfillment,104261,875247
+Activity_0sbji3e,Input Beer Type,userTask,Inventory-Receiving,null,1512744
+Activity_0sbji3e,Input Beer Type,userTask,Inventory-Receiving,127322,933120
+Activity_0sbji3e,Input Beer Type,userTask,Inventory-Receiving,null,638377
+Activity_0wxmbf5,Request Customer Response,serviceTask,Order-Fulfillment,3163,8693
+Activity_14hs6d0,Place Beer in Delivery Area,manualTask,Order-Fulfillment,0,15625
+Activity_1gl08wp,Package Beer,manualTask,Order-Fulfillment,1,6130
+Activity_1uvsz37,Reduce Inventory Forecast,serviceTask,Order-Fulfillment,34183,8221
+Activity_1xqqnmp,Stock Beer,manualTask,Inventory-Receiving,0,7125
+Event_042xlx4,Invoice Paid,intermediateMessageCatch,Order-Approval,1,20775
+Event_08l14ja,Forecast Below Threshold,messageStartEvent,Inventory-Purchasing,0,12528
+Event_0f0wgt5,Order Approved,messageStartEvent,Order-Fulfillment,1,12575
+Event_0fyyihb,Beer Stocked,noneEndEvent,Inventory-Receiving,0,5265
+Event_0jf9cbl,Customer Responded,intermediateMessageCatch,Order-Fulfillment,0,17700
+Event_0pa3d8f,Beer Purchased,noneEndEvent,Inventory-Purchasing,0,12903
+Event_0udoavf,Beer Type Received,intermediateSignalCatch,Order-Fulfillment,244217,28358
+Event_0vryn66,Beer Received,messageStartEvent,Inventory-Receiving,0,12052
+Event_0vryn66,Beer Received,messageStartEvent,Inventory-Receiving,0,5177
+Event_0vryn66,Beer Received,messageStartEvent,Inventory-Receiving,0,7084
+Event_10dwh77,Beer Shipped,noneEndEvent,Order-Fulfillment,0,4638
+Event_14bsvrk,ID Uploaded,intermediateMessageCatch,Order-Approval,1,12068
+Event_16694vh,Notify Beer Type Received,intermediateSignalThrow,Inventory-Receiving,15,14291
+Gateway_0g3syu0,Beer Received Matches Order?,exclusiveGateway,Order-Fulfillment,0,29476
+Gateway_1gcgqpa,Enough Beer?,exclusiveGateway,Order-Fulfillment,1,18843
+Gateway_1gcgqpa,Enough Beer?,exclusiveGateway,Order-Fulfillment,0,7412
+Gateway_1ts721o,Already asked customer?,exclusiveGateway,Order-Fulfillment,5,24654
+StartEvent_1,Order Received,messageStartEvent,Order-Approval,4,7378
+Activity_035rmj8,Send Order Response Email,serviceTask,Order-Approval,,5464
+Activity_06aef69,Judge ID Validity,userTask,Order-Approval,,146281
+Activity_0e8bmr3,Order Beer,serviceTask,Inventory-Purchasing,,9535
+Activity_0ljv0o8,Check Physical Inventory,userTask,Order-Fulfillment,,1444472
+Activity_0ljv0o8,Check Physical Inventory,userTask,Order-Fulfillment,,1372314
+Activity_0sbji3e,Input Beer Type,userTask,Inventory-Receiving,,1394919
+Activity_0sbji3e,Input Beer Type,userTask,Inventory-Receiving,,78711
+Activity_0sbji3e,Input Beer Type,userTask,Inventory-Receiving,,1677397
+Activity_0wxmbf5,Request Customer Response,serviceTask,Order-Fulfillment,,7294
+Activity_14hs6d0,Place Beer in Delivery Area,manualTask,Order-Fulfillment,,8177
+Activity_1gl08wp,Package Beer,manualTask,Order-Fulfillment,,9182
+Activity_1uvsz37,Reduce Inventory Forecast,serviceTask,Order-Fulfillment,,6865
+Activity_1xqqnmp,Stock Beer,manualTask,Inventory-Receiving,,1978
+Event_042xlx4,Invoice Paid,intermediateMessageCatch,Order-Approval,,21039
+Event_08l14ja,Forecast Below Threshold,messageStartEvent,Inventory-Purchasing,,14062
+Event_0f0wgt5,Order Approved,messageStartEvent,Order-Fulfillment,,25879
+Event_0fyyihb,Beer Stocked,noneEndEvent,Inventory-Receiving,,8538
+Event_0jf9cbl,Customer Responded,intermediateMessageCatch,Order-Fulfillment,,21571
+Event_0pa3d8f,Beer Purchased,noneEndEvent,Inventory-Purchasing,,16518
+Event_0udoavf,Beer Type Received,intermediateSignalCatch,Order-Fulfillment,,25823
+Event_0vryn66,Beer Received,messageStartEvent,Inventory-Receiving,,24278
+Event_0vryn66,Beer Received,messageStartEvent,Inventory-Receiving,,22709
+Event_0vryn66,Beer Received,messageStartEvent,Inventory-Receiving,,9582
+Event_10dwh77,Beer Shipped,noneEndEvent,Order-Fulfillment,,16498
+Event_14bsvrk,ID Uploaded,intermediateMessageCatch,Order-Approval,,28220
+Event_16694vh,Notify Beer Type Received,intermediateSignalThrow,Inventory-Receiving,,14186
+Gateway_0g3syu0,Beer Received Matches Order?,exclusiveGateway,Order-Fulfillment,,19779
+Gateway_1gcgqpa,Enough Beer?,exclusiveGateway,Order-Fulfillment,,10937
+Gateway_1gcgqpa,Enough Beer?,exclusiveGateway,Order-Fulfillment,,15381
+Gateway_1ts721o,Already asked customer?,exclusiveGateway,Order-Fulfillment,,2446
+StartEvent_1,Order Received,messageStartEvent,Order-Approval,,12174
+Activity_035rmj8,Send Order Response Email,serviceTask,Order-Approval,,7968
+Activity_06aef69,Judge ID Validity,userTask,Order-Approval,,1402579
+Activity_0e8bmr3,Order Beer,serviceTask,Inventory-Purchasing,,5155
+Activity_0ljv0o8,Check Physical Inventory,userTask,Order-Fulfillment,,1550030
+Activity_0ljv0o8,Check Physical Inventory,userTask,Order-Fulfillment,,1595377
+Activity_0sbji3e,Input Beer Type,userTask,Inventory-Receiving,,1692785
+Activity_0sbji3e,Input Beer Type,userTask,Inventory-Receiving,,193239
+Activity_0sbji3e,Input Beer Type,userTask,Inventory-Receiving,,1366766
+Activity_0wxmbf5,Request Customer Response,serviceTask,Order-Fulfillment,,8102
+Activity_14hs6d0,Place Beer in Delivery Area,manualTask,Order-Fulfillment,,5891
+Activity_1gl08wp,Package Beer,manualTask,Order-Fulfillment,,2930
+Activity_1uvsz37,Reduce Inventory Forecast,serviceTask,Order-Fulfillment,,5854
+Activity_1xqqnmp,Stock Beer,manualTask,Inventory-Receiving,,19633
+Event_042xlx4,Invoice Paid,intermediateMessageCatch,Order-Approval,,17349
+Event_08l14ja,Forecast Below Threshold,messageStartEvent,Inventory-Purchasing,,2100
+Event_0f0wgt5,Order Approved,messageStartEvent,Order-Fulfillment,,14574
+Event_0fyyihb,Beer Stocked,noneEndEvent,Inventory-Receiving,,29974
+Event_0jf9cbl,Customer Responded,intermediateMessageCatch,Order-Fulfillment,,27935
+Event_0pa3d8f,Beer Purchased,noneEndEvent,Inventory-Purchasing,,6102
+Event_0udoavf,Beer Type Received,intermediateSignalCatch,Order-Fulfillment,,10130
+Event_0vryn66,Beer Received,messageStartEvent,Inventory-Receiving,,22900
+Event_0vryn66,Beer Received,messageStartEvent,Inventory-Receiving,,20570
+Event_0vryn66,Beer Received,messageStartEvent,Inventory-Receiving,,1383
+Event_10dwh77,Beer Shipped,noneEndEvent,Order-Fulfillment,,11439
+Event_14bsvrk,ID Uploaded,intermediateMessageCatch,Order-Approval,,8538
+Event_16694vh,Notify Beer Type Received,intermediateSignalThrow,Inventory-Receiving,,14347
+Gateway_0g3syu0,Beer Received Matches Order?,exclusiveGateway,Order-Fulfillment,,18260
+Gateway_1gcgqpa,Enough Beer?,exclusiveGateway,Order-Fulfillment,,8888
+Gateway_1gcgqpa,Enough Beer?,exclusiveGateway,Order-Fulfillment,,27703
+Gateway_1ts721o,Already asked customer?,exclusiveGateway,Order-Fulfillment,,5999
+StartEvent_1,Order Received,messageStartEvent,Order-Approval,,11698
+Activity_035rmj8,Send Order Response Email,serviceTask,Order-Approval,,5822
+Activity_06aef69,Judge ID Validity,userTask,Order-Approval,,496451
+Activity_0e8bmr3,Order Beer,serviceTask,Inventory-Purchasing,,9447
+Activity_0ljv0o8,Check Physical Inventory,userTask,Order-Fulfillment,,325730
+Activity_0ljv0o8,Check Physical Inventory,userTask,Order-Fulfillment,,617571
+Activity_0sbji3e,Input Beer Type,userTask,Inventory-Receiving,,348510
+Activity_0sbji3e,Input Beer Type,userTask,Inventory-Receiving,,109652
+Activity_0sbji3e,Input Beer Type,userTask,Inventory-Receiving,,1784373
+Activity_0wxmbf5,Request Customer Response,serviceTask,Order-Fulfillment,,5722
+Activity_14hs6d0,Place Beer in Delivery Area,manualTask,Order-Fulfillment,,19390
+Activity_1gl08wp,Package Beer,manualTask,Order-Fulfillment,,18077
+Activity_1uvsz37,Reduce Inventory Forecast,serviceTask,Order-Fulfillment,,6029
+Activity_1xqqnmp,Stock Beer,manualTask,Inventory-Receiving,,12488
+Event_042xlx4,Invoice Paid,intermediateMessageCatch,Order-Approval,,16117
+Event_08l14ja,Forecast Below Threshold,messageStartEvent,Inventory-Purchasing,,9680
+Event_0f0wgt5,Order Approved,messageStartEvent,Order-Fulfillment,,15850
+Event_0fyyihb,Beer Stocked,noneEndEvent,Inventory-Receiving,,27674
+Event_0jf9cbl,Customer Responded,intermediateMessageCatch,Order-Fulfillment,,26331
+Event_0pa3d8f,Beer Purchased,noneEndEvent,Inventory-Purchasing,,26832
+Event_0udoavf,Beer Type Received,intermediateSignalCatch,Order-Fulfillment,,5098
+Event_0vryn66,Beer Received,messageStartEvent,Inventory-Receiving,,21672
+Event_0vryn66,Beer Received,messageStartEvent,Inventory-Receiving,,15599
+Event_0vryn66,Beer Received,messageStartEvent,Inventory-Receiving,,2805
+Event_10dwh77,Beer Shipped,noneEndEvent,Order-Fulfillment,,27841
+Event_14bsvrk,ID Uploaded,intermediateMessageCatch,Order-Approval,,4213
+Event_16694vh,Notify Beer Type Received,intermediateSignalThrow,Inventory-Receiving,,8127
+Gateway_0g3syu0,Beer Received Matches Order?,exclusiveGateway,Order-Fulfillment,,19281
+Gateway_1gcgqpa,Enough Beer?,exclusiveGateway,Order-Fulfillment,,27193
+Gateway_1gcgqpa,Enough Beer?,exclusiveGateway,Order-Fulfillment,,28817
+Gateway_1ts721o,Already asked customer?,exclusiveGateway,Order-Fulfillment,,17971
+StartEvent_1,Order Received,messageStartEvent,Order-Approval,,23362
+Activity_035rmj8,Send Order Response Email,serviceTask,Order-Approval,,9952
+Activity_06aef69,Judge ID Validity,userTask,Order-Approval,,1605989
+Activity_0e8bmr3,Order Beer,serviceTask,Inventory-Purchasing,,6273
+Activity_0ljv0o8,Check Physical Inventory,userTask,Order-Fulfillment,,313712
+Activity_0ljv0o8,Check Physical Inventory,userTask,Order-Fulfillment,,738874
+Activity_0sbji3e,Input Beer Type,userTask,Inventory-Receiving,,1793652
+Activity_0sbji3e,Input Beer Type,userTask,Inventory-Receiving,,408062
+Activity_0sbji3e,Input Beer Type,userTask,Inventory-Receiving,,1253347
+Activity_0wxmbf5,Request Customer Response,serviceTask,Order-Fulfillment,,9133
+Activity_14hs6d0,Place Beer in Delivery Area,manualTask,Order-Fulfillment,,1008
+Activity_1gl08wp,Package Beer,manualTask,Order-Fulfillment,,19093
+Activity_1uvsz37,Reduce Inventory Forecast,serviceTask,Order-Fulfillment,,6318
+Activity_1xqqnmp,Stock Beer,manualTask,Inventory-Receiving,,6815
+Event_042xlx4,Invoice Paid,intermediateMessageCatch,Order-Approval,,23515
+Event_08l14ja,Forecast Below Threshold,messageStartEvent,Inventory-Purchasing,,8651
+Event_0f0wgt5,Order Approved,messageStartEvent,Order-Fulfillment,,23048
+Event_0fyyihb,Beer Stocked,noneEndEvent,Inventory-Receiving,,1331
+Event_0jf9cbl,Customer Responded,intermediateMessageCatch,Order-Fulfillment,,29467
+Event_0pa3d8f,Beer Purchased,noneEndEvent,Inventory-Purchasing,,15481
+Event_0udoavf,Beer Type Received,intermediateSignalCatch,Order-Fulfillment,,28850
+Event_0vryn66,Beer Received,messageStartEvent,Inventory-Receiving,,28621
+Event_0vryn66,Beer Received,messageStartEvent,Inventory-Receiving,,16450
+Event_0vryn66,Beer Received,messageStartEvent,Inventory-Receiving,,8886
+Event_10dwh77,Beer Shipped,noneEndEvent,Order-Fulfillment,,21459
+Event_14bsvrk,ID Uploaded,intermediateMessageCatch,Order-Approval,,1674
+Event_16694vh,Notify Beer Type Received,intermediateSignalThrow,Inventory-Receiving,,15419
+Gateway_0g3syu0,Beer Received Matches Order?,exclusiveGateway,Order-Fulfillment,,27950
+Gateway_1gcgqpa,Enough Beer?,exclusiveGateway,Order-Fulfillment,,28003
+Gateway_1gcgqpa,Enough Beer?,exclusiveGateway,Order-Fulfillment,,1264
+Gateway_1ts721o,Already asked customer?,exclusiveGateway,Order-Fulfillment,,9309
+StartEvent_1,Order Received,messageStartEvent,Order-Approval,,14199
