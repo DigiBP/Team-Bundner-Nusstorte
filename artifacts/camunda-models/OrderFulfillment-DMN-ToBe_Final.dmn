@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" id="idDecisionModel" name="ID Readability" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.6.0">
+  <decision id="idDecision" name="ID Decision">
+    <informationRequirement id="InformationRequirement_1299rwm">
+      <requiredInput href="#idReadabilityDecisionInput" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_0n2vymw">
+      <requiredInput href="#idInformationQualityDecisionInput" />
+    </informationRequirement>
+    <decisionTable id="DecisionTable_10fjv3e" hitPolicy="FIRST">
+      <input id="Input_1" label="Readability">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>idReadabilityDecisionInput</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_1mwmjrk">
+          <text>"idReadabilityPoor","idReadabilityDecent","idReadabilityGood"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_1qafg8v" label="Information Quality" biodi:width="198">
+        <inputExpression id="LiteralExpression_1s6uvzl" typeRef="string">
+          <text>idInformationQualityDecisionInput</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_1xnwapt">
+          <text>"idInformationQualityPoor","idInformationQualityDecent","idInformationQualityGood"</text>
+        </inputValues>
+      </input>
+      <output id="Output_1" label="Judgement" name="idJudgementDecisionOutput" typeRef="string">
+        <outputValues id="UnaryTests_09q8f67">
+          <text>"fake","notReadable","accepted"</text>
+        </outputValues>
+      </output>
+      <rule id="DecisionRule_0aagluu">
+        <description>Baseline should be that we trust the customer</description>
+        <inputEntry id="UnaryTests_07k42w3">
+          <text>"idReadabilityPoor"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_01jjgzz">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1lhf6mt">
+          <text>"notReadable"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_10ro7n5">
+        <description>If It's evident, It's evident</description>
+        <inputEntry id="UnaryTests_1m17qb4">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0fn4151">
+          <text>"idInformationQualityPoor"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1cazq60">
+          <text>"fake"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1lrd5pi">
+        <description>Give the customer a second chance!</description>
+        <inputEntry id="UnaryTests_0qi1qxk">
+          <text>"idReadabilityDecent"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_01jmyeh">
+          <text>"idInformationQualityDecent"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0eq27mo">
+          <text>"notReadable"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1qbrvpn">
+        <inputEntry id="UnaryTests_1vmc5mj">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ucw6dh">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_04tny38">
+          <text>"accepted"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <inputData id="idReadabilityDecisionInput" name="ID Readability&#10;" />
+  <inputData id="idInformationQualityDecisionInput" name="ID Information Quality" />
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="idDecision">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_1yi3s1z" dmnElementRef="idReadabilityDecisionInput">
+        <dc:Bounds height="45" width="125" x="117" y="277" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_17kyise" dmnElementRef="idInformationQualityDecisionInput">
+        <dc:Bounds height="45" width="125" x="267" y="278" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_19gtzub" dmnElementRef="InformationRequirement_1299rwm">
+        <di:waypoint x="180" y="277" />
+        <di:waypoint x="220" y="200" />
+        <di:waypoint x="220" y="180" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="DMNEdge_0fre0i4" dmnElementRef="InformationRequirement_0n2vymw">
+        <di:waypoint x="330" y="278" />
+        <di:waypoint x="280" y="200" />
+        <di:waypoint x="280" y="180" />
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
